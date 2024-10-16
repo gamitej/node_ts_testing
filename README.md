@@ -1,4 +1,4 @@
-### Dependencies Installation
+### Install Dependenciess :-
 
 ```
 npm init -y
