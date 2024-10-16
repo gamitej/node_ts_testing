@@ -1,3 +1,7 @@
+/**
+ * Mocking the entire module 
+ * Only changed the functionality of the calculateComplexity functions
+ */
 jest.mock("../../app/doubles/OtherUtils", () => ({
   ...jest.requireActual("../../app/doubles/OtherUtils"),
   calculateComplexity: () => {
@@ -5,6 +9,10 @@ jest.mock("../../app/doubles/OtherUtils", () => ({
   },
 }));
 
+/**
+ *  Mocking the uuid modusle 
+ *  To get the same id from the give uuid module
+ */
 jest.mock("uuid", () => ({
   v4: () => "123",
 }));
